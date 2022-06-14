@@ -1,0 +1,16 @@
+<div class="p-4 mb-3 bg-light rounded">
+    <h4 class="fst-italic">Комментарии</h4>
+
+        {% if comments %}
+             <p class="mb-0">Последние 5 комментариев, оставленных пользователями:</p><br>
+            {% for comment in comments %}
+                <div>
+                    <p align="left">Автор: {{ comment.username }}<br>
+                    Комментарий: {{ comment.comment_text }}<br>
+                    Дата: {{ comment.created_at }}</p><p>***</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h5>Добавьте свой комментарий!</h5>
+        {% endif %}
+</div>

@@ -1,0 +1,149 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>The quadratic equation</title>
+
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">Решение квадратного уравнения</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Wikipedia</a>
+      <a class="p-2 link-secondary" href="https://skysmart.ru/articles/mathematic/kak-reshat-kvadratnye-uravneniya">Skysmart</a>
+      <a class="p-2 link-secondary" href="https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/sposoby-resheniia-kvadratnykh-uravnenii-9115/re-7fc77e6b-731f-49f6-a4f9-b47915b58517">Yaklass</a>
+      <a class="p-2 link-secondary" href="https://ru.onlinemschool.com/math/assistance/equation/quadratic/">Mschool</a>
+      <a class="p-2 link-secondary" href="https://www.math-solution.ru/math-task/quadr-eq">Math-Sol</a>
+      <a class="p-2 link-secondary" href="https://dl.bsu.by/mod/book/view.php?id=10167&chapterid=1204">Theory</a>
+      <a class="p-2 link-secondary" href="https://www.youtube.com/watch?v=a3IVdU_gung">Youtube</a>
+      <a class="p-2 link-secondary" href="https://izamorfix.ru/matematika/algebra/nepolnye_kv_ur.html">Izamorfix</a>
+      <a class="p-2 link-secondary" href="https://www.calc.ru/Kvadratnyye-Uravneniya-Polnoye-I-Nepolnoye-Kvadratnoye-Uravn.html">Calc</a>
+      <a class="p-2 link-secondary" href="https://skysmart.ru/articles/mathematic/nepolnye-kvadratnye-uravneniya">Image</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Онлайн калькулятор</h1>
+        <p class="lead my-3">Используя этот онлайн калькулятор для решения квадратных уравнений, вы сможете очень просто и быстро найти корни квадратного уравнения вида:    ax<sup>2</sup> <sub>*</sub> bx + c = 0 .</p>
+    </div>
+  </div>
+    <div class="row g-5">
+    <div class="col-md-8">
+      <div class="pb-4 mb-4 fst-italic border-bottom">
+        {% block content %}
+        {% endblock content %}
+         <div class="container">
+            <a href="{% url 'comment_page' %}" class="comment-form"><span class="glyphicon glyphicon-plus">Новый комментарий</span></a>
+         </div>
+        {% block comment %}
+        {% endblock comment %}
+    </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+        {% include 'equation/comments.html' %}
+        </div>
+      </div>
+    </div>
+    </div>
+</main>
+
+<footer class="blog-footer">
+    <div class="fixed-bottom">
+        <div class="container">
+          <p>Online quadratic equation calc built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://github.com/revadim">@Re_Vadim</a>.
+          </p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</body></html>

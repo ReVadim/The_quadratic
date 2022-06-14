@@ -1,0 +1,35 @@
+{% extends 'equation/base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Введите данные</strong>
+
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-4">
+                <a href="{% url 'homepage' %}">Сброс</a>
+              </div>
+            </div>
+        </div>
+
+          {% include 'equation/equation_data.html' %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">Результат</strong>
+        <h4>{{ answer.status }}</h4><br>
+        {% if answer.result1 %}
+        <h1>x = {{ answer.result1 }}</h1>
+        {% endif %}
+        {% for value in answer.result2 %}
+          <h1>х = {{ value }}</h1>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock content %}
