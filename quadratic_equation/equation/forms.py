@@ -1,4 +1,5 @@
 from django import forms
+from captcha.fields import CaptchaField
 from django.utils.translation import gettext_lazy as _
 from equation.models import Comments, SolvingEquation
 from django.core.exceptions import ValidationError
@@ -9,6 +10,8 @@ from services import quadratic_equation
 
 class CommentForm(forms.ModelForm):
     """ Form for add comments """
+
+    captcha = CaptchaField()
 
     class Meta:
         model = Comments
